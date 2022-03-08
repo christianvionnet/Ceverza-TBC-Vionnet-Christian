@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
-import Contador from "./contador";
+import Contador from "../contador";
+import ItemCount from "../components/ItemCount";
 
 let productosIniciales = [
   {
@@ -51,6 +52,7 @@ const Main = (props) => {
         })}
       </ul>
       <Contador />
+      <ItemCount />
     </main>
   );
 };
