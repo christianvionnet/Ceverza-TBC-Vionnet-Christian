@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Contador from "../contador";
+// import Contador from "../components/contador";
 import ItemCount from "../components/ItemCount";
 
 let productosIniciales = [
@@ -35,11 +35,9 @@ const Main = (props) => {
     }, 3000);
   });
 
-  console.log(productos);
-
   return (
     <main className="container">
-      <h2>
+      {/* <h2>
         Bienvenido {props.nombre} {props.apellido}!
       </h2>
       <img src="#" />
@@ -50,9 +48,9 @@ const Main = (props) => {
           return;
           <li>{producto.nombre}</li>;
         })}
-      </ul>
-      <Contador />
-      <ItemCount />
+      </ul> */}
+      {/* <Contador /> */}
+      <ItemCount stock="5" initial="1" />
     </main>
   );
 };

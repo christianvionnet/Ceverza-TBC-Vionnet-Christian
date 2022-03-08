@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Header />
-      <Main />
+      <Main nombre="Christian" apellido="Vionnet" />
       <Footer />
     </>
   );
