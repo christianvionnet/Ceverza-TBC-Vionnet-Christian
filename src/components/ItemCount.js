@@ -1,11 +1,11 @@
 import { useState } from "react";
 
 const ItemCount = (props) => {
-  const [contador, setContador] = useState(props.initial);
+  const [contador, setContador] = useState(parseInt(props.initial));
 
   const onAdd = () => {
-    if (props.stock != 0) {
-      if (contador < props.stock) {
+    if (parseInt(props.stock) != 0) {
+      if (contador < parseInt(props.stock)) {
         setContador(contador + 1);
       }
     }
